@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Potential Comics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/main.css" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAhZTwXPuls6agmsWArFL9X_NvptEdgtKI",
+        authDomain: "comicdatabase-1974b.firebaseapp.com",
+        databaseURL: "https://comicdatabase-1974b.firebaseio.com",
+        projectId: "comicdatabase-1974b",
+        storageBucket: "comicdatabase-1974b.appspot.com",
+        messagingSenderId: "453091173195",
+        appId: "1:453091173195:web:f86324351de5edbc407ece"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>Potential Comics</h1>
+    </header>
+    <content>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <!-- <li><a href="#">Games</a></li> -->
+    </nav>
+    <main>
+        <h2 id="comicTitle">Comic Title</h2>
+        <img id="comicImage" src="comic1.jpg" alt="Oops there was suppose to be a comic here">
+        <div id="descBox">
+        <h2>Description</h2>
+        <p id="comicDesc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptate accusantium alias nihil consectetur cumque tenetur neque enim similique dignissimos a id ex eaque et soluta iure rerum, laborum officiis?
+        </p>
+        </div>
+        <div>
+            <button onclick="displaySequence(-1);"> &lt; </button>
+            <button onclick="displayRandom();"> Random </button>
+            <button onclick="displaySequence(1);"> &gt; </button>
+        </div>
+    </main>
+    </content>
+    <script src="lib/main.js"></script>
+</body>
+</html>

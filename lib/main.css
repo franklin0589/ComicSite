@@ -1,0 +1,74 @@
+body{
+    background-color: steelblue;
+    color:white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif; 
+}
+h1{
+    background: linear-gradient(rgb(158, 211, 255),rgb(55, 149, 212));
+    font-family: 'Acme', sans-serif;
+    color: rgb(30, 74, 88);
+    margin: 0;
+    padding: 1vw 0 1vw 0;
+
+    text-align: center;
+}
+h2{
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    margin:0;
+}
+content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100vw;
+}
+nav{
+    
+    padding: 1vw 2vw;
+    background-color:rgb(30, 74, 88);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+a{
+    padding: 1vw;
+    border-radius: 5px;
+    background: linear-gradient(rgb(158, 211, 255),rgb(55, 149, 212));
+    color:white;    
+    text-decoration-line: none;
+    margin-bottom: 10px;
+    border: 0.1vw solid rgb(46, 48, 51);
+}
+a:hover, button:hover{
+    background: rgb(244, 176, 250);
+}
+#comicImage{
+    width:65vw
+}
+main{
+    width: 85vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    font-family: 'Acme', sans-serif;
+    font-size: 1em;
+    background:linear-gradient(rgb(118, 255, 225),lightseagreen);
+    border-radius: 5px;
+    border: none;
+    color:black; 
+    padding:1vw;
+}
+
+#descBox{
+    margin:1vw;
+    color:black;
+    padding: 1vw;
+    background-color: rgb(144, 235, 230);
+    border-radius: 15px;
+}
